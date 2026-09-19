@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keven rclone — encrypted backup integration</title>
+<meta name="description" content="Keven rclone is a small private tool that stores encrypted backup archives in a single Google Drive account.">
+<style>body{font-family:system-ui,sans-serif;max-width:42rem;margin:3rem auto;padding:0 1rem;line-height:1.55;color:#222}h1{font-size:1.6rem}footer{margin-top:3rem;font-size:.9rem;color:#555}</style>
+</head>
+<body>
+<h1>Keven rclone</h1>
+<p><strong>Keven rclone</strong> is the Google OAuth application name used by the Keven project (<em>kevenprojectai</em>) to store encrypted backup copies of its own working files in its own Google Drive account.</p>
+
+<h2>What the application does</h2>
+<ul>
+<li>Runs unattended on a computer operated by the project, using the open-source <a href="https://rclone.org/">rclone</a> tool.</li>
+<li>Requests one Google permission: <code>https://www.googleapis.com/auth/drive.file</code>. This lets the app see and manage only the files and folders that the app itself creates in Google Drive. It cannot read or change any other Drive content.</li>
+<li>Uploads backup archives that are encrypted before they leave the computer, verifies the uploaded copy, and removes superseded backups according to a fixed retention schedule.</li>
+</ul>
+
+<h2>Who uses it</h2>
+<p>The application is used only by the project's own Google account. It is not offered to the public and does not collect data from any other person.</p>
+
+<h2>Privacy</h2>
+<p>Read the <a href="https://kevenprojectai.com/privacy/">Privacy Policy</a> for how Google user data is accessed, used, stored and shared.</p>
+
+<footer>Contact: <a href="mailto:kevenprojectai@gmail.com">kevenprojectai@gmail.com</a></footer>
+</body>
+</html>
